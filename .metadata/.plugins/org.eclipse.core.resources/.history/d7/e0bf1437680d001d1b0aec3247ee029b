@@ -1,0 +1,35 @@
+package co.grandcircus.WeatherProject.models;
+
+public class CurrentObservation {
+	private String elev;
+	private String latitude;
+	private String longitute;
+	private String Temp;
+	
+	
+	public String getElev() {
+		return elev;
+	}
+	public void setElev(String elev) {
+		this.elev = elev;
+	}
+	public String getLatitude() {
+		return latitude;
+	}
+	public void setLatitude(String latitude) {
+		this.latitude = latitude;
+	}
+	public String getLongitute() {
+		return longitute;
+	}
+	public void setLongitute(String longitute) {
+		this.longitute = longitute;
+	}
+	public String getTemp() {
+		return Temp;
+	}
+	public void setTemp(String temp) {
+		Temp = temp;
+	}
+	
+}

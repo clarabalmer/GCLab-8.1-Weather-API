@@ -1,0 +1,12 @@
+package co.grandcircus.WeatherProject;
+
+
+public class HomeController {
+	@Autowired
+	private WeatherService weatherService;
+	
+	@RequestMapping("/")
+	public String showIndex() {
+		return "index";
+	}
+}

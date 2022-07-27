@@ -1,0 +1,8 @@
+package co.grandcircus.WeatherProject;
+
+public class WeatherResponse {
+	private Location location;
+	private CurrentObservation currentObservation;
+	private Time time;
+	
+}

@@ -1,0 +1,12 @@
+package co.grandcircus.WeatherProject;
+
+import co.grandcircus.WeatherProject.models.CurrentObservation;
+import co.grandcircus.WeatherProject.models.Location;
+import co.grandcircus.WeatherProject.models.Time;
+
+public class WeatherResponse {
+	private Location location;
+	private CurrentObservation currentObservation;
+	private Time time;
+	
+}

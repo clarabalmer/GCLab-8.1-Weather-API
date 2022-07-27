@@ -1,0 +1,5 @@
+package co.grandcircus.WeatherProject.models;
+
+public class CurrentObservation {
+
+}

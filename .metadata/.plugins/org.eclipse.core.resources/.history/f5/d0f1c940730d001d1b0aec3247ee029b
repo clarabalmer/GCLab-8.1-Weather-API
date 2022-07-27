@@ -1,0 +1,16 @@
+package co.grandcircus.WeatherProject;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+public class HomeController {
+	@Autowired
+	private WeatherService weatherService;
+	
+	@RequestMapping("/")
+	public String showIndex(Model model) {
+		model.addAttribute("areaDescription", weatherService.getAreaDescription());
+		return "index";
+	}
+}

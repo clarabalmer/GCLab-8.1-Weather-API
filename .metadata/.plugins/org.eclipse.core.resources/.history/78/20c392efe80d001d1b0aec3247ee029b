@@ -1,0 +1,25 @@
+package co.grandcircus.WeatherProject;
+
+import java.util.ArrayList;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+@Controller
+public class HomeController {
+	@Autowired
+	private WeatherService weatherService;
+	
+	@RequestMapping("/")
+	public String showIndex(Model model) {
+		model.addAttribute("weather", weatherService.getWeather());
+		ArrayList<String> upcomingWeatherText = new ArrayList<>();
+		for (int i = 0; i < weatherService.getWeather().getTime().getStartPeriodName().length; i++) {
+			upcomingWeatherText.add(weatherService.getWeather().getTime().getStartPeriodName().toString() + ": " + weatherService.getWeather().getData().getText().toString());
+		}
+		model.addAttribute("upcomingWeatherText", upcomingWeatherText);
+		return "index";
+	}
+}

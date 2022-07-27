@@ -1,0 +1,3 @@
+INDEX VERSION 1.131
+/Users/clarabalmer/Desktop/GC-Labs/8.1-Weather-API/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/1149744567.index
+/WeatherProject/src/main/java

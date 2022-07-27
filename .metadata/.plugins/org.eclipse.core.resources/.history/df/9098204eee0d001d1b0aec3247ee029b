@@ -1,0 +1,25 @@
+package co.grandcircus.WeatherProject;
+
+public class UpcomingWeather {
+	private String startPeriodName;
+	private String text;
+	
+	public UpcomingWeather(String startPeriodName, String text) {
+		super();
+		this.startPeriodName = startPeriodName;
+		this.text = text;
+	}
+	public String getStartPeriodName() {
+		return startPeriodName;
+	}
+	public void setStartPeriodName(String startPeriodName) {
+		this.startPeriodName = startPeriodName;
+	}
+	public String getText() {
+		return text;
+	}
+	public void setText(String text) {
+		this.text = text;
+	}
+	
+}
